@@ -4,9 +4,8 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 function App() {
   return (
     <div>
-      <header>
-        Contacts List
-      </header>
+      // add top bar
+      // add left aside menu
       <ContactsComponent />
     </div>
   );

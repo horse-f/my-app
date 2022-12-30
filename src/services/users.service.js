@@ -1,16 +1,17 @@
-'use strict';
+import { delay, of, switchMap, tap, throwError } from 'rxjs';
 
 export class UsersService {
-    static getProfile = () => {
+    static getProfile = (user) => {
 
     };
 
     static getContacts = () => {
-        console.log('get contacts');
-        return [
+        return of([
             '1',
             '2',
             '3'
-        ]
+        ]).pipe(
+            delay(5000)
+        );
     };
 }
